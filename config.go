@@ -1,4 +1,4 @@
-package config
+package goconf
 
 import (
 	"github.com/astaxie/beego/config"
