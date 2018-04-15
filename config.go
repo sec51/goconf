@@ -29,6 +29,9 @@ func init() {
 		if err == nil {
 			return
 		}
+
+		var tmpConfig config.Configer
+		AppConf = tmpConfig
 	}
 
 	if err != nil {
