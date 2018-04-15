@@ -29,11 +29,12 @@ func init() {
 		if err == nil {
 			return
 		}
-
-		AppConf, err = config.NewConfig("ini", "empty.ini")
 	}
 
 	if err != nil {
 		log.Printf("Could not find any config file in the following paths: %+v\n", confFileLocations)
 	}
+
+	AppConf = config.NewFakeConfig()
+
 }
