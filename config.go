@@ -30,8 +30,7 @@ func init() {
 			return
 		}
 
-		var tmpConfig config.Configer
-		AppConf = tmpConfig
+		AppConf, err = config.NewConfig("ini", "empty.ini")
 	}
 
 	if err != nil {
